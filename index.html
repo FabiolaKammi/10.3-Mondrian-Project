@@ -19,73 +19,66 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
     .container{
-      background-color: rgb(238, 232, 232);
-      height: 748px;
+      background-color: #000;
+      height: 746px;
       width: 748px;
       display: grid;
       grid-template-columns:320px 198px 153px 50px;
       grid-template-rows:414px 130px 155px 20px;
-
+      gap:9px;
     }
     .firstitem {
       background-color: red;
-      border-bottom: 9px;
-      border-right: 9px;
-      border-right-style: solid;
-      border-bottom-style: solid;
-      grid-area: 1/ 1/ 1/ 1;
+      
     }
     .seconditem {
-      grid-area: 1/ 2/ 1/ 4;
+    grid-column:span 3;
       background-color: rgb(238, 232, 232);
-      border-bottom: 9px solid;
-      border-left: 9px solid;
-      
-
     }
+
     .thirditem {
       background-color: rgb(238, 232, 232);
-      border-bottom: 9px solid;
-      border-right: 9px solid;
-      grid-area: 2/ 1/ 3/ 1;
+      grid-row: span 2;
      
     
     }
     
     .forthitem{
-      background-color: blueviolet;
-      border-bottom: 9px solid;
-      border-right: 9px solid;
-      grid-area: 2/2/3/3;
-      grid-row-start: 2;
-      grid-row-end: 3;
-      grid-column-start: 2;
-      grid-column-end: 3;
-
+      background-color: rgb(238, 232, 232);
+      grid-area: 2/2/4/4;
+      
     }
-    .firstitems{
+    .fifthitem {
       background-color: blue;
       border-bottom: 10px solid;
-      border-top: 9px solid;
-      grid-area: 2/4/2/4;
+      
       
     }
-    .seconditems{
+    .sixthitem {
+      grid-row:span 2;
       background-color: rgb(238, 232, 232);
-      grid-area: 3/1/3/1;
-      border-right: 9px solid;
+      border-bottom: ;
 
       
     }
-    .thirditems {
-      background-color: yellow;
-      grid-area: 3/2/3/2;
+    .seventhitem{
+      background-color: rgb(238, 232, 232);;
+      
     }
-    .forthitems{
-      background-color: black;
-      grid-area: 3/ 3/ 3/ 3;
-      border-right: 9px solid;
+    .eightitem{
+      background-color: yellow;
+    
+    }.ninethitem{
+      background-color: #000;
     }
   </style>
 </head>
@@ -96,10 +89,12 @@
     <div class="seconditem">2</div>
     <div class="thirditem">3</div>
     <div class="forthitem">4</div>
-    <div class="firstitems">5</div>
-    <div class="seconditems">6</div>
-    <div class="thirditems">7</div>
-    <div class="forthitems">8</div>
+    <div class="fifthitem">5</div>
+    <div class="sixthitem">6</div>
+    <div class="seventhitem">7</div>
+    <div class="eightitem">8</div>
+    <div class="ninethitem">9</div>
+    
 </div>
 </body>
 
